@@ -1,13 +1,20 @@
-//
-//  Package.swift
-//  M13Checkbox
-//
-//  Created by McQuilkin, Brandon on 4/13/16.
-//  Copyright © 2016 Brandon McQuilkin. All rights reserved.
-//
+// swift-tools-version:5.2
 
 import PackageDescription
 
 let package = Package(
-    name: "M13Checkbox"
+    name: "M13CheckBox",
+    products: [
+        .library(
+            name: "M13CheckBox",
+            targets: ["M13CheckBox"]),
+    ],
+    dependencies: [
+    ],
+    targets: [
+
+        .target(
+            name: "M13CheckBox",
+            dependencies: [], path: "Sources")
+    ]
 )
